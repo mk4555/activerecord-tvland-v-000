@@ -8,6 +8,6 @@ class Character < ActiveRecord::Base
 
   def build_show(name:)
     show = Show.find_or_create_by(name: name)
-    self.show = name
+    self.show = show
   end
 end
