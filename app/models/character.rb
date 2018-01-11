@@ -10,4 +10,8 @@ class Character < ActiveRecord::Base
     show = Show.find_or_create_by(name: name)
     self.show = show
   end
+
+  def build_network(call_letters:)
+    
+  end
 end
